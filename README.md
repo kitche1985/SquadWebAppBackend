@@ -17,21 +17,31 @@ class apiController extends YAF_Abstract_Controller {
 
      public function SquadAction() { 
      
-        if(Requst.IsPost()) { 
+        if(RequestHelper::IsPost()) { 
             
-            //call method insert a new squad to database 
+            //call SquadModel's insert  inser tmethod  to create  a new squad  
             
             
-        } else if(Requst.IsPut()) { 
+        } else if(RequestHelper::IsPut()) { 
         
-            //call method update Squad 
+            //call SquadModel's  update method to delete the Squad 
             
+        } else if(RequestHelper::IsDelete()) { 
+        
+             //call SquadModel's  Delete method to delete the Squad 
+             
+            
+        
+        } else if(RequestHelper::IsGet()) { 
+        
+             //call SquadModel's  Delete method to fetch the Squad by condition 
+             
         }
         
         
      }
      
-}
+ 
  
 
 
