@@ -14,14 +14,25 @@ For example
 
 
 class apiController extends YAF_Abstract_Controller { 
-     public function SquadAction() {
-        if(Requst.IsPost()) {
-            //call method insert a new squad to database
-        } else if(Requst.IsPut()) {
-            //call method update Squad
+
+     public function SquadAction() { 
+     
+        if(Requst.IsPost()) { 
+            
+            //call method insert a new squad to database 
+            
+            
+        } else if(Requst.IsPut()) { 
+        
+            //call method update Squad 
+            
         }
+        
+        
      }
+     
 }
+ 
 
 
 PDO is the database access class for our project, mysqlnd is the common mysql driver.
